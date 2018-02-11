@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddController">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label prefWidth="110.0" text="ОТКУДА:">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="rootTF" prefHeight="24.0" prefWidth="300.0" HBox.hgrow="NEVER" />
+                    </children>
+                </HBox>
+                <Line endX="448.0" VBox.vgrow="ALWAYS">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Line>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="ЛОГИН:">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="loginTF" prefHeight="24.0" prefWidth="300.0" HBox.hgrow="NEVER" />
+                    </children>
+                </HBox>
+                <Line endX="448.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Line>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="ПАРОЛЬ:">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordTF" prefHeight="25.0" prefWidth="300.0" HBox.hgrow="NEVER" />
+                    </children>
+                </HBox>
+                <Line endX="448.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Line>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label prefHeight="25.0" prefWidth="140.0" text="ОПИСАНИЕ:">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="descriptionTF" prefHeight="24.0" prefWidth="270.0" HBox.hgrow="NEVER" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <ImageView fx:id="settingsIMG" fitHeight="32.0" fitWidth="32.0" onMouseClicked="#onSaveClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/save.png" />
+            </image>
+        </ImageView>
+    </right>
+</BorderPane>

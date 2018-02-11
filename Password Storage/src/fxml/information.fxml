@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InformationController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="110.0" text="ОТКУДА:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rootLabel" alignment="CENTER" contentDisplay="CENTER" minWidth="300.0" prefHeight="24.0" prefWidth="300.0" text="Example" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="448.0" VBox.vgrow="ALWAYS">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="110.0" text="ЛОГИН:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" minWidth="300.0" prefHeight="24.0" prefWidth="300.0" text="Example" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="448.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="110.0" text="ПАРОЛЬ:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordLabel" alignment="CENTER" contentDisplay="CENTER" minWidth="300.0" prefHeight="24.0" prefWidth="300.0" text="Example" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="448.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="140.0" text="ОПИСАНИЕ:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descriptionLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="270.0" text="-" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <ImageView fx:id="settingsIMG" fitHeight="32.0" fitWidth="32.0" onMouseClicked="#onSettingClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/settings.png" />
+         </image>
+      </ImageView>
+   </right>
+</BorderPane>

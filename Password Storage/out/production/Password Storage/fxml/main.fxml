@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="addBtn" mnemonicParsing="false" onMouseClicked="#onAddBtnClick" prefHeight="30.0" prefWidth="100.0" text="Добавить" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="deleteBtn" mnemonicParsing="false" onMouseClicked="#onDeleteBtnClick" prefHeight="30.0" prefWidth="100.0" text="Удалить" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onMouseClicked="#onInfoButtonClick" prefHeight="30.0" prefWidth="100.0" text="Информация" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+   <center>
+      <ListView fx:id="listView" editable="true" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/listView.css" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
+   </center>
+</BorderPane>
